@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-rkmq
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/push-pyxis-tenant/appstudio/dc-metro-map-rkmq@sha256:0abcece00fc2f180e97a870f8894e18d7b6191a86c17f6391c7d05d40361329d
+        name: my-nodejs
+        resources: {}
+status: {}
